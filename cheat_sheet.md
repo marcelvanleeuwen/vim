@@ -47,7 +47,3 @@ Delete row
 /{keyword}
 ```
 Search {keyword}
-```sh
-!!{command}
-```
-Executes an external shell command on the current line.
