@@ -18,14 +18,21 @@ Saves edits and then exits Vim.
 ```sh
 :%s/foo/bar/g
 ```
-
 This is a substitution command.
-
 - % — apply to all lines in the file
 - s — substitute
 - foo — the text to find
 - bar — the replacement text
 - g — globally on each line (replace all occurrences, not just the first)
+```sh
+:set hlsearch
+```
+Highlight search: all search matches are visually highlighted in your file.
+```sh
+:set incsearch
+```
+Incremental search: Vim shows matches as you type your search.
+This is a substitution command.
 
 #### Vim normal mode
 ```sh
@@ -36,3 +43,11 @@ Runs a shell command on the current line and replaces that line with the command
 dd   
 ```
 Delete row
+```sh
+/{keyword}
+```
+Search {keyword}
+```sh
+!!{command}
+```
+Executes an external shell command on the current line.
